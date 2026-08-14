@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Realistic Screen Lab</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+</head>
+
+<body>
+
+    <!-- =========================
+         ANA MENÜ
+    ========================== -->
+
+    <main id="home">
+
+        <header class="hero">
+
+            <div class="eyebrow">
+                REALISTIC SCREEN LAB
+            </div>
+
+            <h1>
+                Screen Simulator
+            </h1>
+
+            <p>
+                Gerçekçi cihaz ve işletim sistemi
+                ekranlarının animasyonlu simülasyonları.
+            </p>
+
+        </header>
+
+
+        <!-- =========================
+             ARAMA
+        ========================== -->
+
+        <section class="toolbar">
+
+            <div class="search">
+
+                <span>⌕</span>
+
+                <input
+                    id="searchInput"
+                    type="text"
+                    placeholder="Ekran ara..."
+                >
+
+            </div>
+
+            <button
+                id="allScreens"
+                type="button"
+            >
+                TÜM EKRANLAR
+            </button>
+
+        </section>
+
+
+        <!-- =========================
+             EKRAN KARTLARI
+        ========================== -->
+
+        <section
+            id="screenGrid"
+            class="screen-grid"
+        >
+        </section>
+
+
+        <footer class="footer">
+
+            <span>
+                Screen Lab
+            </span>
+
+            <span>
+                Görsel simülasyondur
+            </span>
+
+        </footer>
+
+    </main>
+
+
+    <!-- =========================
+         EKRAN GÖRÜNTÜLEYİCİ
+    ========================== -->
+
+    <section
+        id="viewer"
+        hidden
+    >
+
+        <div
+            id="deviceFrame"
+            class="device-frame"
+        >
+
+            <!-- =====================
+                 ÜST KONTROL BAR
+            ====================== -->
+
+            <div class="viewer-controls">
+
+                <button
+                    id="backButton"
+                    type="button"
+                >
+                    ← MENÜ
+                </button>
+
+
+                <div
+                    id="screenTitle"
+                    class="screen-title"
+                >
+                    Ekran
+                </div>
+
+
+                <div class="viewer-right">
+
+                    <button
+                        id="restartButton"
+                        type="button"
+                    >
+                        ↻ YENİDEN
+                    </button>
+
+                    <button
+                        id="fullscreenButton"
+                        type="button"
+                    >
+                        ⛶ TAM EKRAN
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- =====================
+                 SİMÜLASYON EKRANI
+            ====================== -->
+
+            <div
+                id="screenHost"
+                class="screen-host"
+            >
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BİLDİRİM
+    ========================== -->
+
+    <div
+        id="toast"
+        class="toast"
+    >
+    </div>
+
+
+    <script
+        src="script.js"
+    ></script>
+
+</body>
+</html>
